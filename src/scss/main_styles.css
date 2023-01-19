@@ -1,5 +1,6 @@
-@import url(./);
-html, body {
+@import url(settings-styles.css);
+html,
+body {
   font-size: 15px;
 }
 
