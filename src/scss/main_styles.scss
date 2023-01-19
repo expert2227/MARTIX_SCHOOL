@@ -19,10 +19,10 @@ body {
   // .header_picture
   &_picture {
   }
-.header_picture img {
-  object-fit: cover;
-  width: 100%;
-}
+  .header_picture img {
+    object-fit: cover;
+    width: 100%;
+  }
   // .header__title
   &__title {
     display: flex;
@@ -142,9 +142,10 @@ body {
 .catalog {
   // .catalog__button
   &__button {
-    margin: 20px auto 0px;
+    margin: 24px auto 0px;
     border-color: transparent;
     font-weight: 500;
+    text-align: center;
   }
 }
 .catalog__button button {
@@ -163,16 +164,13 @@ body {
 }
 
 //===========INDEX-COURSES=======
-.index-block-list {
-  // .index-block-list__title
-  &__title {
-  }
-}
+
 .index-courses {
 }
 .cell-courses {
   display: flex;
   flex-wrap: wrap;
+  margin: 16px -8px 0px;
 }
 .cell-block {
   padding: 8px;
@@ -191,12 +189,12 @@ body {
   display: block;
   // .link-cell-main__bgi
   &__bgi {
+    margin-bottom: 14px;
   }
   &__bgi img {
     width: 100%;
     height: 180px;
     object-fit: cover;
-    margin-bottom: 14px;
     position: relative;
     background-position: center;
   }
@@ -228,7 +226,6 @@ body {
     display: flex;
     align-items: center;
   }
-  
 }
 .body-cell-main_info_item img {
   width: 20px;
@@ -237,9 +234,74 @@ body {
 .cell-main-bgi_big {
   width: 100%;
 }
-.body-cell-main_info_item span{
+.body-cell-main_info_item span {
   line-height: 150%;
   font-size: 14px;
   font-weight: 500;
   margin-left: 8px;
+}
+
+//=======cheat-sheet=========
+
+.catalog-items {
+}
+
+.cheat-sheet-catalog {
+  margin: 16px -14px -14px;
+  // .cheat-sheet-catalog__item
+  &__item {
+    padding: 14px;
+  }
+}
+.sheet-card {
+  border: none;
+  border-radius: 15px;
+  height: 293px;
+  width: 225px;
+  box-shadow: 0 2px 8px 2px rgb(0 0 0 / 20%);
+}
+.sheet-card img {
+  width: 225px;
+  height: 293px;
+  border-radius: 15px;
+}
+
+//===============================
+
+.catalog-items {
+}
+.item-cell {
+}
+.item-card {
+  flex: 0 1 50%;
+  height: 290px;
+
+  // .item-card_img
+  &_img {
+    text-align: center;
+  }
+  .item-card_img img{
+    width: 463px;
+    height: 180px;
+    object-fit: cover;
+  }
+  .item-card-cover {
+    margin: 15px 0px 0px 5px;
+  }
+  // .item-card_title
+  &_title {
+  }
+  // .item-card__link
+  &__link {
+  }
+  // .item-card__description
+  &__description {
+  }
+}
+.catalog {
+  // .catalog__button
+  &__button {
+  }
+}
+.btn {
 }

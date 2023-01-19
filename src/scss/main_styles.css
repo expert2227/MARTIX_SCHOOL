@@ -115,9 +115,10 @@ body {
 }
 
 .catalog__button {
-  margin: 20px auto 0px;
+  margin: 24px auto 0px;
   border-color: transparent;
   font-weight: 500;
+  text-align: center;
 }
 
 .catalog__button button {
@@ -138,6 +139,7 @@ body {
 .cell-courses {
   display: flex;
   flex-wrap: wrap;
+  margin: 16px -8px 0px;
 }
 
 .cell-block {
@@ -158,12 +160,14 @@ body {
   padding: 10px;
   display: block;
 }
+.link-cell-main__bgi {
+  margin-bottom: 14px;
+}
 .link-cell-main__bgi img {
   width: 100%;
   height: 180px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 14px;
   position: relative;
   background-position: center;
 }
@@ -204,4 +208,42 @@ body {
   font-size: 14px;
   font-weight: 500;
   margin-left: 8px;
+}
+
+.cheat-sheet-catalog {
+  margin: 16px -14px -14px;
+}
+.cheat-sheet-catalog__item {
+  padding: 14px;
+}
+
+.sheet-card {
+  border: none;
+  border-radius: 15px;
+  height: 293px;
+  width: 225px;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.sheet-card img {
+  width: 225px;
+  height: 293px;
+  border-radius: 15px;
+}
+
+.item-card {
+  flex: 0 1 50%;
+  height: 290px;
+}
+.item-card_img {
+  text-align: center;
+}
+.item-card .item-card_img img {
+  width: 463px;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.item-card .item-card-cover {
+  margin: 15px 0px 0px 5px;
 }/*# sourceMappingURL=main_styles.css.map */
