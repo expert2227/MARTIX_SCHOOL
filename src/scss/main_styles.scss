@@ -19,6 +19,10 @@ body {
   // .header_picture
   &_picture {
   }
+.header_picture img {
+  object-fit: cover;
+  width: 100%;
+}
   // .header__title
   &__title {
     display: flex;
