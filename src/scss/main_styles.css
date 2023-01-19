@@ -1,7 +1,5 @@
-@import url(./settings-styles.css);
-
-html,
-body {
+@import url(./);
+html, body {
   font-size: 15px;
 }
 
@@ -12,14 +10,12 @@ body {
   padding-top: 30px;
   color: #333333;
 }
-
 .header__title h1 {
   font-size: 40px;
   line-height: 49px;
   opacity: 0.9;
   font-weight: 700;
 }
-
 .header__title p {
   font-size: 15px;
   line-height: 18px;
@@ -61,18 +57,16 @@ body {
   border: 10px solid white;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
 }
-
 .card-student-work__image {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   height: 180px;
   text-align: center;
 }
-
 .card-student-work__image img {
   height: 175px;
   width: 296px;
 }
-
 .card-student-work__social-data {
   display: flex;
   padding-right: 8px;
@@ -94,18 +88,15 @@ body {
   min-width: 44%;
   align-items: center;
 }
-
 .data-social__avatar {
   width: 34px;
   height: 34px;
   margin-right: 9px;
 }
-
 .data-social__name {
   display: flex;
   flex-direction: column;
 }
-
 .counters__like {
   display: flex;
 }
@@ -133,6 +124,4 @@ body {
 .catalog__button button:hover {
   color: #fff;
   background-color: #007bff;
-}
-
-/*# sourceMappingURL=main_styles.css.map */
+}/*# sourceMappingURL=main_styles.css.map */
