@@ -49,6 +49,8 @@ body {
 
 .index-block-list {
   position: relative;
+  width: 100%;
+  padding-bottom: 30px;
   // .index-block-list__title
   &__title {
     font-size: 26px;
@@ -66,6 +68,7 @@ body {
 .catalog-items {
   display: flex;
   flex-wrap: wrap;
+  margin: 16px -8px 0px;
 }
 .catalog-item {
   flex: 0 1 33.333%;
@@ -164,6 +167,9 @@ body {
 }
 
 //===========INDEX-COURSES=======
+.background {
+  background-color: #4ffca626;
+}
 
 .index-courses {
 }
@@ -268,10 +274,6 @@ body {
 
 //===============================
 
-.catalog-items {
-}
-.item-cell {
-}
 .item-card {
   flex: 0 1 50%;
   height: 290px;
@@ -287,21 +289,51 @@ body {
   }
   .item-card-cover {
     margin: 15px 0px 0px 5px;
+    max-width: 455px;
   }
   // .item-card_title
   &_title {
+    color: #434343;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
   }
+  .item-card_title:not(:last-child) {
+    margin-bottom: 7px;
+  }
+
+
   // .item-card__link
   &__link {
   }
   // .item-card__description
   &__description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
   }
 }
-.catalog {
-  // .catalog__button
-  &__button {
-  }
+.title-card-hidden {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
 }
-.btn {
+//=========WEB ===============
+
+.card-web_block {
+  max-width: 295px;
 }
+.card-web {
+  margin-bottom: 14px;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+.card-web img {
+  height: 200px;
+  width: 295px;
+}
+

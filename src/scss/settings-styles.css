@@ -1,5 +1,5 @@
-@import url(../css/null-styles.css);
-@import url(../fonts/style.css);
+@import url(/src/css/null-styles.css);
+@import url(/src/fonts/style.css);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700&display=swap);
 .wrapper {
   display: flex;
