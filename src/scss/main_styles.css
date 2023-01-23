@@ -3,15 +3,10 @@ html,
 body {
   font-size: 15px;
   line-height: 120%;
-  flex-direction: column;
-  min-height: 100vh;
-  min-width: 1124px;
-  overflow-x: hidden;
+  -webkit-box-orient: vertical;
+  min-height: 100%;
+  min-width: 600px;
   position: relative;
-}
-
-.wrapper {
-  margin-left: 84px;
 }
 
 .sidebar-logo-text {
@@ -41,7 +36,7 @@ body {
 .sidebar {
   width: 84px;
   padding: 0 13px;
-  height: 100vh;
+  height: 100%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
@@ -103,6 +98,19 @@ body {
   height: 26px;
 }
 
+@media (max-width: 800px) {
+  .sidebar_item-img {
+    width: 30px;
+  }
+  .sidebar {
+    width: 54px;
+  }
+}
+@media (min-width: 1700px) {
+  .wrapper {
+    margin-left: 84px;
+  }
+}
 .header .header_picture img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -173,10 +181,11 @@ body {
      object-fit: contain;
   height: 180px;
   text-align: center;
+  display: block;
 }
 .card-student-work__image img {
   height: 175px;
-  width: 296px;
+  width: 100%;
 }
 .card-student-work__social-data {
   display: flex;
@@ -187,6 +196,12 @@ body {
   align-items: center;
 }
 
+@media (max-width: 1200px) {
+  .item-cell {
+    flex: 1 1 50%;
+    min-width: 200px;
+  }
+}
 .card-student-work hr {
   color: #f2f2f2;
   width: 100%;
@@ -214,7 +229,7 @@ body {
 
 .like-homework_link {
   display: flex;
-  color: #252B42;
+  color: #252b42;
   transition: all 0.05s ease 0.05s;
 }
 
@@ -248,6 +263,30 @@ body {
   background-color: rgba(189, 167, 27, 0.537254902);
 }
 
+@media (max-width: 1200px) {
+  [class*=__container] {
+    margin: 0px 110px;
+  }
+  .catalog-item {
+    flex: 1 1 45%;
+  }
+}
+@media (max-width: 1000px) {
+  .work-student {
+    max-width: 400px;
+  }
+  .card-student-work__image img {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  [class*=__container] {
+    margin: 0px 50px;
+  }
+  .wrapper {
+    margin-left: 10px;
+  }
+}
 .background {
   background-color: rgba(79, 252, 166, 0.1490196078);
 }
@@ -326,6 +365,11 @@ body {
   margin-left: 8px;
 }
 
+@media (max-width: 1000px) {
+  .block-cell-medium {
+    width: 100%;
+  }
+}
 .cheat-sheet-catalog {
   margin: 16px -14px -14px;
 }
@@ -337,16 +381,26 @@ body {
   border: none;
   border-radius: 15px;
   height: 293px;
-  width: 225px;
+  width: 100%;
   box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
 }
 
 .sheet-card img {
-  width: 225px;
+  width: 100%;
   height: 293px;
   border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
+@media (max-width: 1000px) {
+  .sheet-card {
+    width: 100%;
+  }
+  .sheet-card img {
+    width: 100%;
+  }
+}
 .item-card {
   flex: 0 1 50%;
   height: 290px;
@@ -355,7 +409,7 @@ body {
   text-align: center;
 }
 .item-card .item-card_img img {
-  width: 463px;
+  width: 100%;
   height: 180px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -388,6 +442,10 @@ body {
   width: 100%;
 }
 
+.link-cell-main {
+  width: 100%;
+}
+
 .card-web_block {
   max-width: 295px;
 }
@@ -397,11 +455,17 @@ body {
   background-size: cover;
   position: relative;
   background-position: center;
+  width: 100%;
 }
 
 .card-web img {
   height: 200px;
-  width: 295px;
+  width: 100%;
+}
+
+.web-flex-cell {
+  flex: 1 1 33.333%;
+  min-width: 260px;
 }
 
 .index-promo-background {
@@ -416,8 +480,12 @@ body {
   align-items: center;
 }
 
+.promo-index-img {
+  flex: 1 1 30%;
+}
+
 .promo-index-img img {
-  width: 292px;
+  width: 100%;
   height: 203px;
   border-radius: 15px;
 }
@@ -426,6 +494,9 @@ body {
   margin-left: 55px;
 }
 
+.menu-promo {
+  flex: 1 1 40%;
+}
 .menu-promo_buttons {
   margin: 24px -8px 0;
 }
@@ -453,6 +524,14 @@ body {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+@media (max-width: 768px) {
+  .promo-index-menu {
+    margin-left: 25px;
+  }
+  .promo-index-img {
+    width: 300px;
+  }
+}
 .main-footer {
   display: flex;
   flex: 0 0 auto;
@@ -466,8 +545,8 @@ body {
   align-items: center;
   height: 25px;
   line-height: 120%;
-  font-size: 18px;
-  color: #252B42;
+  font-size: 15px;
+  color: #252b42;
   transition: 0.3 ease;
 }
 .footer_link:hover {
@@ -497,4 +576,5 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 5px;
 }/*# sourceMappingURL=main_styles.css.map */
