@@ -59,6 +59,7 @@ body {
   display: flex;
   justify-content: flex-start;
   text-decoration: none;
+  transition: all 0.03s ease 0.03s;
 }
 .sidebar_item-body {
   width: 100%;
@@ -83,6 +84,11 @@ body {
   -webkit-box-align: start;
   border-bottom: 1px solid #8ea263;
   padding: 14px 0;
+}
+
+.sidebar_item:hover {
+  background-color: rgba(167, 145, 37, 0.2039215686);
+  border-radius: 4px;
 }
 
 .sidebar_item-img img {
@@ -206,6 +212,16 @@ body {
   display: flex;
 }
 
+.like-homework_link {
+  display: flex;
+  color: #252B42;
+  transition: all 0.05s ease 0.05s;
+}
+
+.like-homework_link:hover {
+  color: rgb(165, 162, 162);
+}
+
 .like-homework {
   margin-right: 6px;
 }
@@ -223,13 +239,13 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  color: #007bff;
+  color: #353303;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .catalog__button button:hover {
   color: #fff;
-  background-color: #007bff;
+  background-color: rgba(189, 167, 27, 0.537254902);
 }
 
 .background {
@@ -417,7 +433,7 @@ body {
   width: 234px;
   text-align: center;
   margin: 8px;
-  background-color: #2f80ed;
+  background-color: rgba(163, 104, 51, 0.631372549);
   border: 1px solid #f8f8f8;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
@@ -433,7 +449,7 @@ body {
 }
 
 .menu-promo_button:hover {
-  background-color: #296dc6;
+  background-color: rgba(127, 80, 39, 0.631372549);
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -450,7 +466,8 @@ body {
   align-items: center;
   height: 25px;
   line-height: 120%;
-  color: #fff;
+  font-size: 18px;
+  color: #252B42;
   transition: 0.3 ease;
 }
 .footer_link:hover {
