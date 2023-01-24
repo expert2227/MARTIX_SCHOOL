@@ -332,6 +332,10 @@ body {
   align-items: center;
 }
 
+.link-cell-main:hover {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
 .body-cell-main_title {
   padding-bottom: 7px;
   color: #434343;
@@ -383,6 +387,10 @@ body {
   height: 293px;
   width: 100%;
   box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.sheet-card:hover {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
 .sheet-card img {

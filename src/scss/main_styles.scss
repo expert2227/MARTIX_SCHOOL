@@ -379,6 +379,9 @@ body {
     align-items: center;
   }
 }
+.link-cell-main:hover {
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+}
 .body-cell-main {
   // .body-cell-main_title
   &_title {
@@ -438,6 +441,9 @@ body {
   height: 293px;
   width: 100%;
   box-shadow: 0 2px 8px 2px rgb(0 0 0 / 20%);
+}
+.sheet-card:hover {
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
 }
 .sheet-card img {
   width: 100%;
