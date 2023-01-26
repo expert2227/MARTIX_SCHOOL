@@ -442,6 +442,14 @@ body {
   -webkit-box-orient: vertical;
 }
 
+.card-item-50 {
+  flex: 0 1 50%;
+}
+
+.card-item-100 {
+  flex: 0 1 100%;
+}
+
 .title-card-hidden {
   display: block;
   overflow: hidden;
