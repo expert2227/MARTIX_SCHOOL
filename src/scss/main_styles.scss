@@ -1,6 +1,5 @@
 //import settings-styles.
 @import url(settings-styles.css);
-
 html,
 body {
   font-size: 15px;
@@ -11,10 +10,7 @@ body {
   min-width: 600px;
   position: relative;
 }
-
-// ====== MAIN-SIDEBAR-WRAPPER =================================
-.main-sidebar-wrapper {
-}
+// ====== MAIN-SIDEBAR-WRAPPER ================================= 
 .sidebar-logo-text {
   font-size: 28px;
   font-weight: bold;
@@ -126,16 +122,13 @@ body {
     width: 54px;
   }
 }
-
 //==============ADAPTIVE FOR MAIN BLOCKS================
 @media (min-width: 1700px) {
   .wrapper {
     margin-left: 84px;
   }
 }
-
 //---------header---------
-
 .header {
   // .header__container
   &__container {
@@ -168,9 +161,7 @@ body {
     padding-bottom: 10px;
   }
 }
-
 //================MAIN================
-
 .index-block-list {
   position: relative;
   width: 100%;
@@ -227,13 +218,6 @@ body {
     align-items: center;
   }
 }
-
-@media (max-width: 1200px) {
-  .item-cell {
-    flex: 1 1 50%;
-    min-width: 200px;
-  }
-}
 .card-student-work hr {
   color: #f2f2f2;
   width: 100%;
@@ -279,7 +263,6 @@ body {
 .like-homework {
   margin-right: 6px;
 }
-
 .catalog {
   // .catalog__button
   &__button {
@@ -297,15 +280,19 @@ body {
   border-radius: 0.25rem;
   color: #353303;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .catalog__button button:hover {
   color: #fff;
   background-color: #bda71b89;
 }
-
 //=====ADAPTIVE FOR INDEX-BLOCK-LIST 1ST=======
-
+@media (max-width: 1200px) {
+  .item-cell {
+    flex: 1 1 50%;
+    min-width: 200px;
+  }
+}
 @media (max-width: 1200px) {
   [class*="__container"] {
     margin: 0px 110px;
@@ -330,16 +317,11 @@ body {
     margin-left: 10px;
   }
   .card-student-work__image img {
-    //width: 200px;
   }
 }
-
 //===========INDEX-COURSES=======
 .background {
   background-color: #4ffca626;
-}
-
-.index-courses {
 }
 .cell-courses {
   display: flex;
@@ -407,7 +389,6 @@ body {
 .body-cell-main_info_item img {
   width: 20px;
 }
-
 .cell-main-bgi_big {
   width: 100%;
 }
@@ -422,12 +403,7 @@ body {
     width: 100%;
   }
 }
-
 //=======cheat-sheet=========
-
-.catalog-items {
-}
-
 .cheat-sheet-catalog {
   margin: 16px -14px -14px;
   // .cheat-sheet-catalog__item
@@ -461,7 +437,6 @@ body {
   }
 }
 //===============================
-
 .item-card {
   flex: 0 1 50%;
   height: 290px;
@@ -489,7 +464,6 @@ body {
   .item-card_title:not(:last-child) {
     margin-bottom: 7px;
   }
-
   // .item-card__link
   &__link {
   }
@@ -501,10 +475,8 @@ body {
     -webkit-box-orient: vertical;
   }
 }
-
 .card-item-50 {
   flex: 0 1 50%;
-
 }
 .card-item-100 {
   flex: 0 1 100%;
@@ -538,9 +510,7 @@ body {
   flex: 1 1 33.333%;
   min-width: 260px;
 }
-
 //=========PROMO========
-
 .index-promo-background {
   position: relative;
   background-color: #79f84729;
@@ -553,11 +523,6 @@ body {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-  }
-}
-.index-block {
-  // .index-block__container
-  &__container {
   }
 }
 .promo-index-img {
@@ -594,16 +559,15 @@ body {
   &__title {
     font-weight: bold;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 120%;
     color: #434343;
   }
 }
 .menu-promo_button:hover {
   background-color: #7f5027a1;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-
 @media (max-width: 768px) {
   .promo-index-menu {
     margin-left: 25px;
@@ -612,9 +576,7 @@ body {
     width: 300px;
   }
 }
-
 //===========MAIN FOOTER===========
-
 .main-footer {
   display: flex;
   flex: 0 0 auto;
@@ -644,7 +606,7 @@ body {
 .footer_link:hover {
   color: rgb(232, 231, 231);
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .footer_link span {
   margin-left: 11px;

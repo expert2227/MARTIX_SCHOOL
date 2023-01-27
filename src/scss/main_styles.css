@@ -196,12 +196,6 @@ body {
   align-items: center;
 }
 
-@media (max-width: 1200px) {
-  .item-cell {
-    flex: 1 1 50%;
-    min-width: 200px;
-  }
-}
 .card-student-work hr {
   color: #f2f2f2;
   width: 100%;
@@ -263,6 +257,12 @@ body {
   background-color: rgba(189, 167, 27, 0.537254902);
 }
 
+@media (max-width: 1200px) {
+  .item-cell {
+    flex: 1 1 50%;
+    min-width: 200px;
+  }
+}
 @media (max-width: 1200px) {
   [class*=__container] {
     margin: 0px 110px;
@@ -531,7 +531,7 @@ body {
 .menu-promo__title {
   font-weight: bold;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 120%;
   color: #434343;
 }
 
