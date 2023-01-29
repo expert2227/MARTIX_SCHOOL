@@ -1,12 +1,43 @@
 //============HEADER============
 .ctg-header-title {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 49px;
-    text-align: center;
-    color: #333333;
-    opacity: 0.9;
-    margin: 0;
-    padding-bottom: 30px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  color: #333333;
+  opacity: 0.9;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.card-item-100 a .img_item-100 img {
+  height: 231px;
+}
+.link_item-100-wrapper {
+  display: flex;
+  gap: 10px;
+}
+.img_item-100 {
+  flex: 0 1 50%;
+}
+.cover_item-100 {
+  flex: 0 1 50%;
+}
+.counters__like {
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+.likes-count {
+  background-color: #fff;
+  font-size: 16px;
+}
+.likes-count:hover {
+  color: rgb(165, 162, 162);
+}
+.card-item-50 {
+  min-height: 320px;
+}
+.card-item-100 {
+  min-height: 285px;
 }
