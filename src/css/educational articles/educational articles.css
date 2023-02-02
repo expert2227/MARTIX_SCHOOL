@@ -10,8 +10,9 @@
   padding-bottom: 30px;
 }
 
-.card-item-100 a .img_item-100 img {
-  height: 231px;
+.img_item-100 img {
+  height: 180px;
+  width: 100%;
 }
 
 .link_item-100-wrapper {
@@ -46,5 +47,14 @@
 }
 
 .card-item-100 {
-  min-height: 285px;
+  min-height: 255px;
+}
+
+@media (min-width: 991.98px) {
+  .card-item-100 {
+    min-height: 285px;
+  }
+  .img_item-100 img {
+    height: 231px;
+  }
 }/*# sourceMappingURL=educational articles.css.map */
