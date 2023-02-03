@@ -114,6 +114,9 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  border: 14px solid #656161;
+  border-radius: 15px;
+  height: 210px;
 }
 .header__title {
   display: flex;

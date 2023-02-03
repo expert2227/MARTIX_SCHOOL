@@ -139,6 +139,9 @@ body {
   .header_picture img {
     object-fit: cover;
     width: 100%;
+    border: 14px solid #656161;
+    border-radius: 15px;
+    height: 210px;
   }
   // .header__title
   &__title {
